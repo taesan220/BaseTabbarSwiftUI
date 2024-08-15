@@ -9,16 +9,21 @@ import SwiftUI
 
 struct SettingView: View {
     var body: some View {
-        Text("Setting View")
-            .padding()
-            .background(Color.white)
-            .edgesIgnoringSafeArea(.bottom)
+        
+        VStack {
+            
+            Text("Setting View")
+                .padding()
+                .background(Color("colour-white")) // Background color for the entire view
+                .foregroundColor(Color("colour-black")) // Text color
+                .edgesIgnoringSafeArea(.bottom)
+        }
     }
 }
 
 
 struct SettingView_Preview: PreviewProvider {
     static var previews: some View {
-        ListView()
+        SettingView()
     }
 }

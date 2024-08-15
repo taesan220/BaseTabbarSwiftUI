@@ -11,10 +11,10 @@ struct CustomTabView: View {
     @Binding var tabSelection: Int
     @Namespace private var animationNameSpace
     
-    let tabBarItems: [(selectedImage: String, unSelectedImage: String, title: String)] = [
-        ("icon-home", "icon-tapped_home", "home"),
-        ("icon-list", "icon-tapped_list", "list"),
-        ("icon-setting", "icon-tapped_setting", "setting")
+    let tabBarItems: [(selectedImage: String, unTappedImage: String, title: String)] = [
+        ("icon-home", "icon-untapped_home", "home"),
+        ("icon-list", "icon-untapped_list", "list"),
+        ("icon-setting", "icon-untapped_setting", "setting")
     ]
     
     var body: some View {
@@ -28,7 +28,7 @@ struct CustomTabView: View {
                             Spacer()
                             
                             // Change the image based on selection
-                            Image(index + 1 == tabSelection ? tabBarItems[index].selectedImage : tabBarItems[index].unSelectedImage)
+                            Image(index + 1 == tabSelection ? tabBarItems[index].selectedImage : tabBarItems[index].unTappedImage)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit) // Maintain aspect ratio
                                 .frame(width: 24, height: 24) // Adjust size as needed

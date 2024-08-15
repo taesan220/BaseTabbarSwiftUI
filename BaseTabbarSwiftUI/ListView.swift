@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct ListView: View {
+    @State private var textFieldText: String = ""
+    
     var body: some View {
-        Text("List View")
-            .padding()
-            .background(Color.white)
-            .edgesIgnoringSafeArea(.bottom)
+        
+        VStack {
+            
+            Text("List View")
+                .padding()
+                .background(Color("colour-white")) // Background color for the entire view
+                .foregroundColor(Color("colour-black")) // Text color
+                .edgesIgnoringSafeArea(.bottom)
+        }
     }
 }
 

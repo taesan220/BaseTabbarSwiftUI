@@ -9,10 +9,15 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Home View")
-            .padding()
-            .background(Color.white)
-            .edgesIgnoringSafeArea(.bottom)
+        
+        VStack {
+            
+            Text("Home View")
+                .padding()
+                .background(Color("colour-white")) // Background color for the entire view
+                .foregroundColor(Color("colour-black")) // Text color
+                .edgesIgnoringSafeArea(.bottom)
+        }
     }
 }
 
