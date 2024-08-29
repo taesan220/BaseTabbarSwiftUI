@@ -35,7 +35,7 @@ struct CustomTabView: View {
                             
                             Text(tabBarItems[index].title)
                                 .font(.system(size: 12)) // Adjust text size here
-                                .foregroundColor(index + 1 == tabSelection ? .white : Color("colourTabbar"))
+                                .foregroundColor(index + 1 == tabSelection ? .white : Color("colour-tabbar_title"))
                         }
                     }
                     .frame(maxWidth: .infinity) // Ensure buttons take up equal space
