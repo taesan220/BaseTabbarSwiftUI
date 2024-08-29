@@ -18,6 +18,7 @@
 		8008F99E2C6DEBEC0093FBE5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008F9952C6DEBEB0093FBE5 /* HomeView.swift */; };
 		8008F99F2C6DEBEC0093FBE5 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008F9962C6DEBEC0093FBE5 /* CustomTabView.swift */; };
 		8008F9A02C6DEBEC0093FBE5 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008F99B2C6DEBEC0093FBE5 /* SettingView.swift */; };
+		807C2B062C80264C00B43775 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C2B052C80264C00B43775 /* CustomNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		8008F9992C6DEBEC0093FBE5 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		8008F99B2C6DEBEC0093FBE5 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		8008F99C2C6DEBEC0093FBE5 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		807C2B052C80264C00B43775 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				8008F96B2C6DEBB70093FBE5 /* BaseTabbarSwiftUIApp.swift */,
 				8008F96D2C6DEBB70093FBE5 /* ContentView.swift */,
+				807C2B052C80264C00B43775 /* CustomNavigationBar.swift */,
 				8008F9962C6DEBEC0093FBE5 /* CustomTabView.swift */,
 				8008F9952C6DEBEB0093FBE5 /* HomeView.swift */,
 				8008F99C2C6DEBEC0093FBE5 /* ListView.swift */,
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8008F96E2C6DEBB70093FBE5 /* ContentView.swift in Sources */,
+				807C2B062C80264C00B43775 /* CustomNavigationBar.swift in Sources */,
 				8008F99E2C6DEBEC0093FBE5 /* HomeView.swift in Sources */,
 				8008F99F2C6DEBEC0093FBE5 /* CustomTabView.swift in Sources */,
 				8008F9A02C6DEBEC0093FBE5 /* SettingView.swift in Sources */,
