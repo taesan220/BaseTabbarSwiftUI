@@ -1,23 +1,23 @@
+////
+////  ListView.swift
+////  BaseTab
+////
+////  Created by Taesan Kim on 15/8/2024.
+////
 //
-//  ListView.swift
-//  BaseTab
+//import SwiftUI
 //
-//  Created by Taesan Kim on 15/8/2024.
+//struct ListView: View {
+//    var body: some View {
+//        Text("List View")
+//            .padding()
+//            .background(Color.white)
+//            .edgesIgnoringSafeArea(.bottom)
+//    }
+//}
 //
-
-import SwiftUI
-
-struct ListView: View {
-    var body: some View {
-        Text("List View")
-            .padding()
-            .background(Color.white)
-            .edgesIgnoringSafeArea(.bottom)
-    }
-}
-
-struct ListView_Preview: PreviewProvider {
-    static var previews: some View {
-        ListView()
-    }
-}
+//struct ListView_Preview: PreviewProvider {
+//    static var previews: some View {
+//        ListView()
+//    }
+//}

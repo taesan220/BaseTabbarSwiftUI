@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var showAlert = false // State to control the alert
-    
+    @State private var showDetail = false // State to control navigation to HomeDetailView
+
     var body: some View {
         VStack {
             
@@ -25,21 +25,20 @@ struct HomeView: View {
             
             // Button at the center
             Button(action: {
-                showAlert = true // Show alert when button is pressed
+               showDetail = true // Navigate to HomeDetailView
             }) {
-                Text("Show Alert")
-                    .padding()
-                    .background(Color.blue) // Background color for the button
-                    .foregroundColor(.white) // Button text color
-                    .cornerRadius(10) // Rounded corners
+               Text("Go to Home Detail")
+                   .padding()
+                   .background(Color.blue) // Background color for the button
+                   .foregroundColor(.white) // Button text color
+                   .cornerRadius(10) // Rounded corners
             }
-            .alert(isPresented: $showAlert) {
-                Alert(
-                    title: Text("Button Pressed"),
-                    message: Text("You have pressed the button."),
-                    dismissButton: .default(Text("OK"))
-                )
-            }
+            .background(
+               NavigationLink(destination: HomeDetailView(), isActive: $showDetail) {
+                   EmptyView() // 빈 뷰로 NavigationLink를 보이지 않게 함
+               }
+               .hidden() // 숨김 처리
+            )
             
             Spacer() // Pushes the button to center vertically
         }

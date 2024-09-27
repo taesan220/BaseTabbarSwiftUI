@@ -1,24 +1,24 @@
+////
+////  HomeView.swift
+////  BaseTab
+////
+////  Created by Taesan Kim on 15/8/2024.
+////
 //
-//  HomeView.swift
-//  BaseTab
+//import SwiftUI
 //
-//  Created by Taesan Kim on 15/8/2024.
+//struct HomeView: View {
+//    var body: some View {
+//        Text("Home View")
+//            .padding()
+//            .background(Color.white)
+//            .edgesIgnoringSafeArea(.bottom)
+//    }
+//}
 //
-
-import SwiftUI
-
-struct HomeView: View {
-    var body: some View {
-        Text("Home View")
-            .padding()
-            .background(Color.white)
-            .edgesIgnoringSafeArea(.bottom)
-    }
-}
-
-
-struct HomeView_Preview: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
+//
+//struct HomeView_Preview: PreviewProvider {
+//    static var previews: some View {
+//        HomeView()
+//    }
+//}
