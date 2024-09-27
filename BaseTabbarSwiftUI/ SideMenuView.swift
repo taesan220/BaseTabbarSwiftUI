@@ -25,6 +25,8 @@ struct SideMenuView: View {
             }) {
                 Text("Home")
                     .padding()
+                    .foregroundColor(Color("colour-black")) // 버튼 텍스트 색상을 검정색으로 변경
+
             }
             
             Button(action: {
@@ -35,6 +37,8 @@ struct SideMenuView: View {
             }) {
                 Text("Item List")
                     .padding()
+                    .foregroundColor(Color("colour-black")) // 버튼 텍스트 색상을 검정색으로 변경
+
             }
             
             Button(action: {
@@ -45,6 +49,8 @@ struct SideMenuView: View {
             }) {
                 Text("Setting")
                     .padding()
+                    .foregroundColor(Color("colour-black")) // 버튼 텍스트 색상을 검정색으로 변경
+
             }
             
             Spacer()

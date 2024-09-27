@@ -14,7 +14,6 @@ struct HomeDetailView: View {
         VStack {
             Text("Home Detail View")
                 .padding()
-                .background(Color.white)
                 .edgesIgnoringSafeArea(.bottom)
         }
         .navigationBarTitle("Home Detail", displayMode: .inline) // 상단에 뒤로가기 버튼 자동 생성
